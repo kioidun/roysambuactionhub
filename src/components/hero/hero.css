@@ -1,0 +1,89 @@
+.hero {
+    background-image: url('../../images/market.jpg');
+    background-color: #1A1A1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin-top: -70px;
+    padding-top: 70px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 26, 27, 0.3);
+    z-index: -1;
+}
+.hero-content p {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+.beautiful-text {
+    color: #F4A261;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+   display: inline-block;
+    background: #2D5A27;
+    color: #F4A261;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s;
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+}
+
+.btn-primary:hover { background: #3d7a34; transform: translateY(-2px); }
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #F4A261;
+}
+
+.btn-secondary:hover {
+    background-color: #F4A261;
+    color: #1A1A1B;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(244, 162, 97, 0.4);
+}

@@ -1,0 +1,69 @@
+.manifesto {
+  background: linear-gradient(
+    135deg,
+    rgba(45, 90, 39, 0.06) 0%,
+    transparent 60%
+  );
+  border-top: 1px solid rgba(141, 91, 76, 0.18);
+  border-bottom: 1px solid rgba(141, 91, 76, 0.18);
+  text-align: center;
+  padding: 8rem 3rem;
+}
+
+.manifesto h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 400;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+.manifesto h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 700;
+  color: #f4a261;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+.manifesto_quote {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.15rem, 2.5vw, 1.65rem);
+  font-style: italic;
+  font-weight: 400;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  position: relative;
+}
+.manifesto_quote::before {
+  content: '"';
+  font-size: 8rem;
+  color: rgba(244, 162, 97, 0.08);
+  position: absolute;
+  top: 2.5rem;
+  left: -4rem;
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.manifesto_quotes {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.15rem, 2.5vw, 1.65rem);
+  font-style: italic;
+  font-weight: 400;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  position: relative;
+}
+.manifesto_body {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: rgba(224, 224, 224, 0.72);
+  line-height: 1.85;
+}
