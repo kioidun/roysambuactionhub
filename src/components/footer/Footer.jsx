@@ -1,23 +1,36 @@
-import React from 'react'
-import './footer.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./footer.css";
 
 function Footer() {
   return (
-    <div className='footer'>
-   <div>
-    <div class="footer-logo">The Roysambu Action Hub</div>
-    <div class="footer-tagline">Roysambu Action Hub · Nairobi, Kenya</div>
-  </div>
-  <ul class="footer-links">
-    <li><a href="#manifesto">Manifesto</a></li>
-    <li><a href="#pillars">The Work</a></li>
-    <li><a href="#archive">Archive</a></li>
-    <li><a href="#involve">Contact</a></li>
-    <li><a href="#">Statement of Purpose</a></li>
-  </ul>
-  <div class="footer-copy">© 2026 RACH. Made with joy in Roysambu.</div>
-  </div>
-  )
+    <div className="footer">
+      <div>
+        <div className="footer-logo">The Roysambu Action Hub</div>
+        <div className="footer-tagline">Roysambu Action Hub · Nairobi, Kenya</div>
+      </div>
+
+      <ul className="footer-links">
+        <li>
+          <Link to="/manifesto">Manifesto</Link>
+        </li>
+        <li>
+          <Link to="/pillars">The Work</Link>
+        </li>
+        <li>
+          <Link to="/archive">Archive</Link>
+        </li>
+        <li>
+          <Link to="/getinvolved">Contact</Link>
+        </li>
+        <li>
+          <Link to="/statement-of-purpose">Statement of Purpose</Link>
+        </li>
+      </ul>
+
+      <div className="footer-copy">© 2026 RACH. Made with joy in Roysambu.</div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
