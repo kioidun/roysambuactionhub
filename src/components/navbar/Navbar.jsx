@@ -1,23 +1,24 @@
-import React from 'react'
-import './navbar.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./navbar.css";
 
 function Navbar() {
   return (
-   <header>
-    <h1>Roysambu Action Hub</h1>
-    <nav className='nav'>
-        <ul className='nav_ul'>
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/#manifesto">MANIFESTO</Link></li>
-            <li><Link to="/#pillars">PILLARS</Link></li>
-             <li><Link to="/#archive">ARCHIVE</Link></li>
-            <li><Link to="/#involve">GET INVOLVED</Link></li>
-           
-        </ul>
-    </nav>
-   </header>
-  )
+    <header className="site-header">
+      <div className="nav-container">
+        <h1>Roysambu Action Hub</h1>
+
+        <nav className="nav">
+          <ul className="nav_ul">
+            <li><a href="/">HOME</a></li>
+            <li><a href="#manifesto">MANIFESTO</a></li>
+            <li><a href="#pillars">PILLARS</a></li>
+            <li><a href="#archive">ARCHIVE</a></li>
+            <li><a href="#involve">GET INVOLVED</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;

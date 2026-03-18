@@ -12,31 +12,31 @@ function Archive() {
   const archiveItems = [
     {
       id: 1,
-      image: [Digitallaptop],
+      image: Digitallaptop,
       alt: "Digital Genius Golden Hour on the keyboard",
       overlay: "Roysambu's Resilience",
     },
     {
       id: 2,
-      image:[Plant],
+      image: Plant,
       alt: "Green Rituals Hands in Soil",
       overlay: "Oral Histories",
     },
     {
       id: 3,
-      image: [Market],
+      image: Market,
       alt: "Everyday Resistance The Market At Dusk",
       overlay: "Community Memory",
     },
     {
       id: 4,
-      image: [Infrastructure],
-      alt: "InfrastructureOur Streets, Our Gallery",
+      image: Infrastructure,
+      alt: "Infrastructure Our Streets, Our Gallery",
       overlay: "Everyday Joy",
     },
     {
       id: 5,
-      image: [Ameal],
+      image: Ameal,
       alt: "Collective Joy A Shared Meal",
       overlay: "Youth & Hope",
     },
@@ -44,38 +44,40 @@ function Archive() {
 
   return (
     <section className="archive" id="archive">
-      <div className="archive-header">
-        <div>
-          <h3>Living Archive</h3>
-          <h2>
-            The Roysambu Archive:
-            <br />
-            Volume I.
-          </h2>
+      <div className="archive-container">
+        <div className="archive-header">
+          <div>
+            <h3>Living Archive</h3>
+            <h2>
+              The Roysambu Archive:
+              <br />
+              Volume I.
+            </h2>
+          </div>
+
+          <p className="archive-caption">
+            "Documenting the everyday resistance of being happy and whole."
+          </p>
         </div>
 
-        <p className="archive-caption">
-          "Documenting the everyday resistance of being happy and whole."
-        </p>
-      </div>
+        <div className="archive-grid">
+          {archiveItems.map((item, index) => (
+            <div
+              key={item.id}
+              className={`archive-item ${index === 0 ? "archive-item-large" : ""}`}
+              onClick={() => setLightboxImage(item.image)}
+            >
+              <div className="archive-item-inner">
+                <img src={item.image} alt={item.alt} />
+                <span className="lightbox-hint"></span>
+              </div>
 
-      <div className="archive-grid">
-        {archiveItems.map((item, index) => (
-          <div
-            key={item.id}
-            className={`archive-item ${index === 0 ? "archive-item-large" : ""}`}
-            onClick={() => setLightboxImage(item.image)}
-          >
-            <div className="archive-item-inner">
-              <img src={item.image} alt={item.alt} />
-              <span className="lightbox-hint"></span>
+              <div className="archive-overlay">
+                <span className="archive-overlay-text">{item.overlay}</span>
+              </div>
             </div>
-
-            <div className="archive-overlay">
-              <span className="archive-overlay-text">{item.overlay}</span>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {lightboxImage && (
@@ -90,10 +92,7 @@ function Archive() {
             ×
           </button>
 
-          <div
-            className="lightbox-content"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
             <img src={lightboxImage} alt="Expanded archive view" />
           </div>
         </div>
