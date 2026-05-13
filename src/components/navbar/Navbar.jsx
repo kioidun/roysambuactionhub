@@ -6,7 +6,10 @@ function Navbar() {
   return (
     <header className="site-header">
       <div className="nav-container">
-        <h1>Roysambu Action Hub</h1>
+        <Link to="/" className="brand" aria-label="Roysambu Community Action Hub home">
+          <span className="brand-mark">RCAH</span>
+          <span className="brand-name">Roysambu Community Action Hub</span>
+        </Link>
 
         <nav className="nav">
           <ul className="nav_ul">

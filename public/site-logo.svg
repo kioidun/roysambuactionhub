@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Roysambu Community Action Hub</title>
+  <rect width="512" height="512" rx="96" fill="#1A1A1B"/>
+  <rect x="72" y="74" width="368" height="364" rx="64" fill="#2D5A27"/>
+  <text x="256" y="250" text-anchor="middle" fill="#F4A261" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="800" letter-spacing="2">RCAH</text>
+  <text x="256" y="316" text-anchor="middle" fill="#E0E0E0" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="4">ROYSAMBU</text>
+  <path d="M116 360H396" stroke="#F4A261" stroke-width="16" stroke-linecap="round"/>
+</svg>

@@ -19,7 +19,7 @@ function Getinvolved() {
     const contribution = formData.get("contribution");
     const message = formData.get("message").trim();
 
-    const subject = `Roysambu Action Hub: ${contribution}`;
+    const subject = `Roysambu Community Action Hub: ${contribution}`;
 
     formData.set("fullName", fullName);
     formData.set("email", email);

@@ -5,8 +5,8 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-logo-wrap">
-        <div className="footer-logo">The Roysambu Action Hub</div>
-        <div className="footer-tagline">Roysambu Action Hub · Nairobi, Kenya</div>
+        <div className="footer-logo">The Roysambu Community Action Hub</div>
+        <div className="footer-tagline">Roysambu Community Action Hub · Nairobi, Kenya</div>
       </div>
 
       <ul className="footer-links">
