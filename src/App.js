@@ -6,6 +6,7 @@ import Manifesto from "./components/manifesto/Manifesto";
 import Pillars from "./components/pillars/Pillars";
 import Getinvolved from "./components/getinvolved/Getinvolved";
 import Archive from "./components/archive/Archive";
+import Gallery from "./components/gallery/Gallery";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/pillars" element={<Pillars />} />
       <Route path="/getinvolved" element={<Getinvolved />} />
       <Route path="/archive" element={<Archive />}/>
+      <Route path="/gallery" element={<Gallery />}/>
     </Routes>
     <Footer/>
    </BrowserRouter>

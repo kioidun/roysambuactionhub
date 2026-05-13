@@ -125,6 +125,26 @@
   transform: translateY(-1px);
 }
 
+.form-submit:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
+.form-status {
+  color: rgba(224,224,224,0.72);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.form-status-sent {
+  color: #9ed18f;
+}
+
+.form-status-error {
+  color: #f4a261;
+}
+
 @media (max-width: 900px) {
   .involve {
     grid-template-columns: 1fr;

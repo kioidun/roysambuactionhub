@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Digitallaptop from "../../images/digitallaptop.jpg";
 import Plant from "../../images/plant.jpg";
 import Market from "../../images/marketafrica.jpg";
-import Infrastructure from "../../images/infrastructure.jpg";
+import Tech from "../../images/tech.jpg";
+import InfrastructureTwo from "../../images/roysa.jpg";
 import Ameal from "../../images/ameal.jpg";
 import "./archive.css";
 
@@ -12,7 +12,7 @@ function Archive() {
   const archiveItems = [
     {
       id: 1,
-      image: Digitallaptop,
+      image: Tech,
       alt: "Digital Genius Golden Hour on the keyboard",
       overlay: "Roysambu's Resilience",
     },
@@ -30,7 +30,7 @@ function Archive() {
     },
     {
       id: 4,
-      image: Infrastructure,
+      image: InfrastructureTwo,
       alt: "Infrastructure Our Streets, Our Gallery",
       overlay: "Everyday Joy",
     },
